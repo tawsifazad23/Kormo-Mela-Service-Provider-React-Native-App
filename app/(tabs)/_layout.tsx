@@ -1,3 +1,6 @@
+
+
+// TabLayout.js
 import { Tabs } from 'expo-router';
 import React from 'react';
 
@@ -13,22 +16,32 @@ export default function TabLayout() {
       screenOptions={{
         tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
         headerShown: false,
-      }}>
+      }}
+    >
       <Tabs.Screen
-        name="index"
+        name="AllJobPostings"
         options={{
-          title: 'Home',
+          title: 'All Jobs',
           tabBarIcon: ({ color, focused }) => (
-            <TabBarIcon name={focused ? 'home' : 'home-outline'} color={color} />
+            <TabBarIcon name={focused ? 'briefcase' : 'briefcase-outline'} color={color} />
           ),
         }}
       />
       <Tabs.Screen
-        name="explore"
+        name="Chats"
         options={{
-          title: 'Explore',
+          title: 'Chats',
           tabBarIcon: ({ color, focused }) => (
-            <TabBarIcon name={focused ? 'code-slash' : 'code-slash-outline'} color={color} />
+            <TabBarIcon name={focused ? 'chatbubble' : 'chatbubble-outline'} color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="Confirmation"
+        options={{
+          title: 'Confirmation',
+          tabBarIcon: ({ color, focused }) => (
+            <TabBarIcon name={focused ? 'checkmark-circle' : 'checkmark-circle-outline'} color={color} />
           ),
         }}
       />
