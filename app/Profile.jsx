@@ -6,7 +6,7 @@ import { Ionicons } from '@expo/vector-icons';
 
 const dummyUser = {
   first_name: 'John',
-  last_name: 'Doe',
+  last_name: 'Doee',
   phone: '+8801234567890',
   address: '123 Main Street, Dhaka',
   rating: 4.7,
